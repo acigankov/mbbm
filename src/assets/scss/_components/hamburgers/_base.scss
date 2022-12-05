@@ -20,35 +20,31 @@
   margin: 0;
   overflow: visible;
 
-  @media (hover) {
-    &:hover {
-      @if $hamburger-hover-use-filter == true {
-        filter: $hamburger-hover-filter;
-      }
-      @else {
-        opacity: $hamburger-hover-opacity;
-      }
+  &:hover {
+    @if $hamburger-hover-use-filter == true {
+      filter: $hamburger-hover-filter;
     }
-
-
-    &.is-active {
-      &:hover {
-        @if $hamburger-hover-use-filter == true {
-          filter: $hamburger-active-hover-filter;
-        }
-        @else {
-          opacity: $hamburger-active-hover-opacity;
-        }
-      }
-
-      .hamburger-inner,
-      .hamburger-inner::before,
-      .hamburger-inner::after {
-        background-color: $hamburger-active-layer-color;
-      }
+    @else {
+      opacity: $hamburger-hover-opacity;
     }
   }
 
+  &.is-active {
+    &:hover {
+      @if $hamburger-hover-use-filter == true {
+        filter: $hamburger-active-hover-filter;
+      }
+      @else {
+        opacity: $hamburger-active-hover-opacity;
+      }
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: $hamburger-active-layer-color;
+    }
+  }
 }
 
 .hamburger-box {
@@ -62,7 +58,6 @@
   display: block;
   top: 50%;
   margin-top: math.div($hamburger-layer-height, -2);
-  ;
 
   &,
   &::before,
@@ -90,5 +85,4 @@
   &::after {
     bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
   }
-
 }

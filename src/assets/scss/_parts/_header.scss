@@ -1,0 +1,105 @@
+.header {
+    
+    &-bg {
+        background: linear-gradient(#eaeae8 -5%, #7f7382 100%);
+    }
+
+    &-line {
+        @include flex(center, space-between);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 200px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &-socials {
+        margin-left: auto;
+        margin-right: 30px;
+        @include font('Roboto-Regular', normal, 1rem, #fff);
+
+        .socials-icons {
+            @include flex;
+
+            svg {
+                fill: #fff;
+                margin: 6px;
+            }
+
+            a:hover {
+                opacity: 0.7;
+            }
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &-content {
+        padding: 0 40px 20px;
+
+        &__heading {
+            @include font('Roboto-Black', normal, 3rem, $color-red);
+            text-transform: uppercase;
+            line-height: 0.9;
+            padding-bottom: 30px;
+            padding-left: 20px;
+
+            @media (max-width: $md) {
+                text-align: center;
+            }
+
+            @media (max-width: $sm) {
+                font-size: 2.4rem;
+
+            }
+
+            & > span {
+                font-size: 3.589rem;
+
+                @media (max-width: $sm) {
+                    font-size: 2.889rem;
+                }
+                
+            }
+        }
+
+        &__subheading {
+            opacity: 0.7;
+            padding: 20px 30px;
+            border-radius: 10px;
+            background-color: #ded7e3;
+            margin: 0 auto 20px;
+
+
+            & > span {
+                @include font('Roboto-Bold', normal, 1.189rem, $color-dark);
+                text-transform: uppercase;
+            }
+
+
+        }
+
+        &__description {
+            width: 63%;
+            margin-left: auto;
+            padding-left: 25px;
+            background: linear-gradient($color-red, $color-red) no-repeat 0 / 20px;
+            
+            @media (max-width: $lg) {
+                width: 100%;
+            }
+
+
+            p {
+                @include font('Roboto-Regular', normal, 0.9rem, #fff);
+            }
+            
+        }
+    }
+
+
+}
