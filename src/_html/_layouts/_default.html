@@ -13,7 +13,9 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/swiper/swiper-bundle.min.css">
     <title>{{ title }}</title>
 </head>
 <body {% if bodyClass %}class="{{ bodyClass }}"{% endif %} >
@@ -27,6 +29,7 @@
         {% include "_html/_includes/_footer.html" %}
     </div>
     <script src="/libs/jquery.min.js"></script>
+    <script src="/libs/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/js/custom.min.js"></script>
 </body>
 </html>
