@@ -1,0 +1,61 @@
+.for {
+    &-row {
+        @include flex(stretch, flex-start);
+
+        @media (max-width: $lg) {
+            flex-direction: column-reverse;
+        }
+
+    }
+
+    &-left {
+        width: 45%;
+        background-color: $color-gray;
+        padding: 80px 60px 60px;
+
+        @media (max-width: $lg) {
+            width: 100%;
+        }
+    }
+
+    &-right {
+        background-color: gray;
+        width: 55%;
+        min-height: 400px;
+
+        @media (max-width: $lg) {
+            width: 100%;
+        }
+    }
+
+    &-subheading {
+        @include font ('Roboto-Bold', normal, 1rem, #fff);
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+
+    &-list {
+        margin-bottom: 20px;
+    
+        li {
+            list-style-type: disc;
+            list-style-position: inside;
+            list-style-image: linear-gradient($color-red, $color-red);
+            @include font ('Roboto-Regular', normal, 0.9rem, #fff);
+        }
+    }
+
+    &-button {
+        background-color: $color-red;
+    }
+
+    &-heading {
+        @include font ('Roboto-Black', normal, 2rem, $color-gray);
+        text-transform: uppercase;
+        margin-top: 40px;
+        margin-left: 60px;
+        padding-left: 25px;
+        background: linear-gradient(#b9003d, #b9003d) no-repeat 0/20px;
+    }
+    
+}

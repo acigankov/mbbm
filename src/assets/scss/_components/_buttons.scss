@@ -1,0 +1,14 @@
+.btn {
+    padding: 10px 20px;
+    @include font ('Roboto-Bold', normal, 0.909rem, #fff);
+    
+    border-radius: 8px;
+
+    &:focus {
+        outline: 1px solid $color-dark;
+    }
+
+    &:active, &:hover {
+        opacity: 0.7;
+    }
+}
