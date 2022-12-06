@@ -126,12 +126,14 @@
             @media (max-width: $lg) {
                 height: auto;
                 opacity: 0;
-                visibility: 0;
+                visibility: hidden;
                 transition: $transition;
+                pointer-events: none;
     
                 &.open {
                     opacity: 1;
-                    visibility: 1;
+                    visibility: visible;
+                    pointer-events: all;
                 }
                 
                 background: #7f7382;
