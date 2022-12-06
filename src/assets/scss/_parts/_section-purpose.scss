@@ -1,5 +1,9 @@
 .purpose {
 
+    .section-white {
+        padding-bottom: 40px;
+    }
+
     &-heading {
         @include font('Roboto-black', normal, 1.747rem, $color-bordo);
         text-transform: uppercase;
