@@ -1,0 +1,36 @@
+.tarifs {
+    &-header {
+        @include flex(flex-start, flex-start);
+        padding: 40px 0;
+
+        @media (max-width: $md) {
+            flex-direction: column;
+        }
+
+        &__title {
+            width: 30%;
+            @include font('Roboto-Black', normal, 1.747rem, $color-gray);
+            text-transform: uppercase;
+            text-align: right;
+            padding-right: 20px;
+
+            
+            @media (max-width: $md) {
+                width: 100%;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+        }
+
+        &__text {
+            @include font('Roboto-Bold', normal, 1rem, $color-gray);
+            padding-left: 20px;
+            background: linear-gradient(#b9003d, #b9003d) no-repeat 0/10px;
+
+            span {
+                display: block;
+            }
+        }
+    }
+}
