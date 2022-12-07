@@ -1,0 +1,66 @@
+.autors {
+
+    .section-padding {
+        padding-bottom: 40px;
+    }
+
+    &-heading {
+        @include font('Roboto-black', normal, 1.747rem, $color-bordo);
+        text-transform: uppercase;
+        text-align: center;
+        padding: 40px 10px 30px;
+    }
+
+    &-item {
+        @include flex(center, space-between);
+        @media (max-width: $sm) {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+
+            @media (max-width: $sm) {
+                flex-direction: column;
+            }
+
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &__image {
+            width: 20%;
+            max-width: 200px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            flex-grow: 0;
+            box-shadow: 1px 1px 10px $color-dark;
+
+            @media (max-width: $sm) {
+                width: 100%;
+                max-width: 150px;
+                margin-bottom: 30px;
+            }
+        }
+
+        &__text {
+            width: 78%;
+            @include font('Roboto-Regular', normal, 1rem, $color-dark);
+
+            @media (max-width: $xxl) {
+                width: 75%;
+            }
+            @media (max-width: $sm) {
+                width: 100%;
+            }
+
+            & > strong {
+                @include font('Roboto-black', normal, 1rem, $color-bordo);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
