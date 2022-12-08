@@ -1,0 +1,182 @@
+.callback {
+    .form-join {
+        padding: 40px 0 20px;
+
+        .join-field {
+            @include flex(center, space-between);
+            padding-bottom: 20px;
+
+            @media (max-width: $sm) {
+                flex-direction: column;
+            }
+
+            input {
+                padding: 10px 20px;
+                border: 1px solid #dfdce0;
+                border-radius: 4px;
+                @include font ('Roboto-Regular', normal, 1rem, $color-dark);
+
+                &::placeholder {
+                    @include font ('Roboto-Regular', normal, 0.9rem, #dfdce0);
+                }
+            }
+
+            &__name {
+                width: 58%;
+
+                @media (max-width: $sm) {
+                    width: 100%;
+                }
+            }
+
+            &__tel {
+                width: 40%;
+
+                @media (max-width: $sm) {
+                    width: 100%;
+                }
+            }
+        }
+
+        input[type="submit"] {
+            background-color: $color-red;
+            padding: 15px 25px;
+        }
+    }
+
+    &-description {
+        display: block;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 20px 30px;
+        @include font ('Roboto-Regular', normal, 1rem, #606060);
+    }
+
+    &-heading {
+        @include font('Roboto-black', normal, 1.747rem, $color-red);
+        text-transform: uppercase;
+        text-align: center;
+        padding: 40px 10px 30px;
+    }
+
+    .intouch {
+        padding-bottom: 40px;
+        @include flex(flex-start, space-between);
+
+        @media (max-width: $md) {
+            flex-direction: column;
+        }
+
+        &-col {
+            width: 49%;
+
+            @media (max-width: $md) {
+                width: 100%;
+            }
+        }
+
+        &-social {
+            @include flex(center, flex-start);
+            @include font ('Roboto-Bold', normal, 1rem, $color-dark);
+            flex-shrink: 0;
+            flex-grow: 0;
+            
+            &:not(:last-child) {
+                padding-bottom: 10px;
+            }
+
+            @media (max-width: $md) {
+                padding-bottom: 20px;
+            }
+
+            svg {
+                fill: $color-red; 
+                width: 32px;
+                margin-right: 20px;
+                flex-shrink: 0;
+                flex-grow: 0;
+            }
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        &-question {
+            @include font ('Roboto-Bold', normal, 1rem, $color-dark);
+            display: block;
+            padding-bottom: 20px;
+            
+            a {
+                display: inline-block;
+                color: $color-red;
+                
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        &-callback {
+            position: relative;
+            @include font ('Roboto-Bold', normal, 1rem, $color-dark);
+
+            span {
+                color: $color-red;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        &-form {
+            visibility: hidden;
+            opacity: 0;
+            overflow: hidden;
+            height: auto;
+            @include flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: $color-red;
+            padding: 20px 30px;
+            max-width: 350px;
+            width: 100%;
+            left: 120px;
+            top: 25px;
+            border-top-right-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-bottom-left-radius: 16px;
+            transition: $transition;
+
+            &.open {
+                visibility: visible;
+                opacity: 1;
+            }
+            
+
+            @media (max-width: $lg) {
+                left: 50px;
+            }
+
+            input[type="text"],input[type="tel"] {
+                padding: 10px;
+                background-color: #fff;
+                border-radius: 4px;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                &::placeholder {
+                    @include font ('Roboto-Bold', normal, 0.89rem, $color-red);
+                }
+            }
+
+            input[type="submit"] {
+                text-decoration: underline;
+            }
+
+
+
+        }
+    }
+}
