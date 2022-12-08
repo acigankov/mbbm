@@ -19,6 +19,10 @@
                 &::placeholder {
                     @include font ('Roboto-Regular', normal, 0.9rem, #dfdce0);
                 }
+
+                @media (max-width: $sm) {
+                    margin-bottom: 10px;
+                }
             }
 
             &__name {
