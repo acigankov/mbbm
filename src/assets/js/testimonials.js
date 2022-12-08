@@ -1,0 +1,25 @@
+const swiper = new Swiper('.testimonials-slider', {
+    // Optional parameters
+    loop: true,
+    speed: 300,
+    autoplay: {
+        delay: 2000,
+    },
+    grabCursor: false,
+    //If true, then active slide will be centered, not always on the left side.
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    slidesPerView: 1,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        // when window width is >= 992px
+        992: {
+            slidesPerView: 3,
+        }
+      }
+});
