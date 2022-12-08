@@ -2,17 +2,15 @@
 
     .section-padding {
         padding-bottom: 40px;
-
         background-image: url('/assets/img/tarifs-bg.webp');
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-
+        background-size: contain;
+        background-position: top center;
     }
 
     &-header {
         @include flex(flex-start, flex-start);
-        padding: 40px 0;
+        padding: 40px 0 60px;
 
         @media (max-width: $md) {
             flex-direction: column;
@@ -25,13 +23,11 @@
             text-align: right;
             padding-right: 20px;
 
-            
             @media (max-width: $md) {
                 width: 100%;
                 text-align: center;
                 padding-bottom: 20px;
             }
-
         }
 
         &__text {
@@ -42,6 +38,86 @@
             span {
                 display: block;
             }
+        }
+    }
+
+    &-row {
+        @include flex(stretch, center);
+        gap: 20px;
+        
+        @media (max-width: $md) {
+            flex-direction: column;
+        }
+    }
+
+    &-col {
+        @include flex (flex-end, space-between);
+        flex-direction: column;
+        position: relative;
+        background-color: rgba($color-gray, 0.8);
+        border-radius: 10px;
+        padding: 60px 30px 20px;
+        width: 45%;
+
+        @media (max-width: $md) {
+            width: 100%;
+        }
+    }
+
+    &-badge {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 50px;
+        background: red;
+        @include flex;
+        @include font('Roboto-Bold', normal, 0.8rem,#fff);
+
+        &_right {
+            right: 0;
+            left: auto;
+        }
+    }
+
+    &-title {
+        @include font('Roboto-Bold', normal, 1rem, $color-red);
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    &-list {
+        @include font('Roboto-Regular', normal, 0.9rem, #fff);
+        padding-bottom: 60px;
+
+        &__item {
+            vertical-align: middle;
+            list-style-position: inside;
+            list-style-type: disc;
+            list-style-image: linear-gradient($color-red, $color-red);
+            padding-bottom: 10px;
+
+            &_none {
+                text-decoration: line-through;
+                color: rgba(#fff, 0.5);
+            }
+        }
+    }
+
+    &-footer {
+        margin-top: auto;
+        text-align: right;
+
+        &__oldprice {
+            display: block;
+            @include font('Roboto-Bold', normal, 0.88rem, #fff);
+            text-decoration: line-through;
+        }
+
+        &__price {
+            display: block;
+            @include font('Roboto-Bold', normal, 1rem, #fff);
         }
     }
 }
