@@ -4,8 +4,12 @@
         padding-bottom: 40px;
         background-image: url('/assets/img/tarifs-bg.webp');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 100%;
         background-position: top center;
+
+        @media (max-width: $lg) {
+            background-size: cover;
+        }
     }
 
     &-header {
