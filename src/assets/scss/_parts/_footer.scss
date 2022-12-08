@@ -1,0 +1,33 @@
+.footer {
+
+    &-content {
+        @include flex(flex-start, space-between);
+        padding: 60px 0;
+
+
+        @media (max-width: $sm) {
+            flex-direction: column;
+        }
+    }
+
+    &-list {
+        @include font('Roboto-Regular', normal, 0.9rem, #fff);
+        width: 70%;
+        padding-right: 40px;
+
+        @media (max-width: $sm) {
+            width: 100%;
+            padding-bottom: 40px ;
+        }
+    }
+
+    &-logo {
+        @media (max-width: $sm) {
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+
+}

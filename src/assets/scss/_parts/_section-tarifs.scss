@@ -74,13 +74,14 @@
         left: 0;
         width: 150px;
         height: 50px;
-        background: red;
+        background-image: url('/assets/img/contur-left.webp');
         @include flex;
         @include font('Roboto-Bold', normal, 0.8rem,#fff);
 
         &_right {
             right: 0;
             left: auto;
+            background-image: url('/assets/img/contur-right.webp');
         }
     }
 
