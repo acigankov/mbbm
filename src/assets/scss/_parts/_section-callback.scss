@@ -11,6 +11,7 @@
             }
 
             input {
+                width: 100%;
                 padding: 10px 20px;
                 border: 1px solid #dfdce0;
                 border-radius: 4px;
@@ -25,7 +26,7 @@
                 }
             }
 
-            &__name {
+            .wpcf7-form-control-wrap:first-child {
                 width: 58%;
 
                 @media (max-width: $sm) {
@@ -33,13 +34,18 @@
                 }
             }
 
-            &__tel {
+            .wpcf7-form-control-wrap:last-child {
                 width: 40%;
 
                 @media (max-width: $sm) {
                     width: 100%;
                 }
             }
+        }
+
+        .wpcf7-response-output {
+            border: none;
+            @include font ('Roboto-Regular', normal, 1rem, $color-dark);
         }
 
         input[type="submit"] {
@@ -155,16 +161,17 @@
                 visibility: visible;
                 opacity: 1;
             }
-            
 
             @media (max-width: $lg) {
                 left: 50px;
             }
 
-            input[type="text"],input[type="tel"] {
+            input:not([type="submit"]) {
                 padding: 10px;
                 background-color: #fff;
                 border-radius: 4px;
+                width: 100%;
+                margin-bottom: 10px;
 
                 &:not(:last-child) {
                     margin-bottom: 10px;

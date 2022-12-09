@@ -2,13 +2,14 @@
     <div class="container">
         <div class="section-padding section-white">
 
-            <form action="/" id="form-join" class="form-join">
-                <div class="join-field">
-                    <input type="text" class="join-field__name" placeholder="Фамилия, Имя, Отчество">
-                    <input type="tel" class="join-field__tel" placeholder="Контактный телефон">
-                </div>
-                <input type="submit" value="Присоединиться" class="btn">
-            </form>
+<!--            <form action="/" id="form-join" class="form-join">-->
+<!--                <div class="join-field">-->
+<!--                    <input type="text" class="join-field__name" placeholder="Фамилия, Имя, Отчество">-->
+<!--                    <input type="tel" class="join-field__tel" placeholder="Контактный телефон">-->
+<!--                </div>-->
+<!--                <input type="submit" value="Присоединиться" class="btn">-->
+<!--            </form>-->
+            <?= do_shortcode('[contact-form-7 id="5" html_class="form-join"]') ?>
 
             <span class="callback-description">
                 При необходимости возможна рассрочка на основе программы Тинькофф Банка.</br>
@@ -36,11 +37,12 @@
                 <div class="intouch-col">
                     <span class="intouch-question">Если у Вас есть вопрос, всегда можете позвонить нам по телефону: <a href="tel:+79037913869">+7-903-791-38-69</a></span>
                     <span class="intouch-callback ">Или заказать <span class="callback-action" id="callback-action">обратный звонок!</span>
-                    <form action="/" class="intouch-form" id="intouch-form">
-                            <input type="text" placeholder="имя">
-                            <input type="text" placeholder="телефон">
-                            <input type="submit" value="отправить" in>
-                        </form>
+<!--                    <form action="/" class="intouch-form" id="intouch-form">-->
+<!--                            <input type="text" placeholder="имя">-->
+<!--                            <input type="text" placeholder="телефон">-->
+<!--                            <input type="submit" value="отправить" in>-->
+<!--                        </form>-->
+                        <?= do_shortcode('[contact-form-7 id="22" title="Обратный Звонок" html_id="intouch-form" html_class="intouch-form"]') ?>
                 </span>
                     
                 
