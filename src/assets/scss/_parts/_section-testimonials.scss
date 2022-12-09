@@ -34,6 +34,7 @@
         &-slide:not(.swiper-slide-active) {
             opacity: 0.1;
             transition: $transition;
+            pointer-events: none;
         }
 
         &-slide-active {
@@ -41,6 +42,7 @@
             animation: changeActiveSlide;
             animation-duration: 2s;
             cursor: pointer;
+            pointer-events: all;
 
             @media(hover) {
                 &:hover {
