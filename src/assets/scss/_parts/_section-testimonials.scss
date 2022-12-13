@@ -3,6 +3,10 @@
         height: auto;
         z-index: 0 !important;
 
+        &-slide {
+            text-align: center;
+        }
+
         video {
             max-width: 100%;
         }
@@ -10,9 +14,6 @@
         &-button-next, &-button-prev {
             color: $color-dark !important;
 
-            @media(max-width: $lg) {
-                display: none !important;
-            }
 
             @media (hover) {
                 &:hover {
@@ -24,11 +25,22 @@
         .swiper-button-next, .swiper-rtl .swiper-button-prev {
             right: 25%;
             left: auto;
+
+            @media(max-width: $lg) {
+                right: 5%;
+                left: auto;
+            }
+
         }
 
         .swiper-button-prev, .swiper-rtl .swiper-button-next {
             left: 25%;;
             right: auto;
+
+            @media(max-width: $lg) {
+                left: 5%;
+                right: auto;
+            }
         }
 
         &-slide:not(.swiper-slide-active) {
