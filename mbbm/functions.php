@@ -184,3 +184,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 require get_template_directory() . '/post-types/post-testimonials.php';
 
+//убирает теги br и p из шаблона contact form7
+
+add_filter('wpcf7_autop_or_not', '__return_false');
