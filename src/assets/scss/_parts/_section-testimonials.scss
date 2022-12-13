@@ -1,4 +1,12 @@
-.testimonials {    
+.testimonials {
+
+    &-heading {
+        @include font('Roboto-black', normal, 1.747rem, $color-bordo);
+        text-transform: uppercase;
+        text-align: center;
+        padding: 40px 10px 30px;
+    }
+
     .swiper {
         height: auto;
         z-index: 0 !important;

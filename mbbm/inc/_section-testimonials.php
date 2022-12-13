@@ -1,7 +1,9 @@
 <section class="testimonials" id="testimonials">
     <div class="container">
         <div class="section-white">
-            <!-- Slider main container -->
+            <div class="section-padding">
+                <h1 class="testimonials-heading">Видео отзывы участниц по учебной программе:</h1>
+            </div><!-- /.section-padding -->
 
             <?php //собираем посты по типу
             $thisPostId = get_the_ID();
@@ -14,6 +16,7 @@
             ));
             ?>
 
+            <!-- Slider main container -->
             <div class="swiper testimonials-slider">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">

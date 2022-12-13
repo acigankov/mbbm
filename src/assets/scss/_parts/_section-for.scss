@@ -1,4 +1,5 @@
 .for {
+    color: #fff;
     &-row {
         @include flex(stretch, flex-start);
 
@@ -50,6 +51,7 @@
     }
 
     &-button {
+        display: inline-block;
         background-color: $color-red;
     }
 

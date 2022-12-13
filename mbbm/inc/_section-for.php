@@ -9,7 +9,7 @@
                         <li class="for-list__item">не хотят выходить из декрета снова в офис</li>
                         <li class="for-list__item">хотят принять на себя управление существующим семейным бизнесом в силу выбытия мужа на фронт или его иммиграции</li>
                     </ul>
-                    <button class="btn for-button">Заказать</button>
+                    <a href="#callback" class="btn for-button">Заказать</a>
             </div><!-- /.col-left -->
             <div class="for-right">
                 <h1 class="for-heading">Для кого <br> эта программа</h1>
