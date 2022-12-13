@@ -71,24 +71,26 @@
     &-badge {
         position: absolute;
         top: 0;
-        left: 0;
+        left: -15px;
         width: 150px;
-        height: 50px;
-        background-image: url('/assets/img/contur-left.webp');
+        height: 60px;
+        padding-bottom: 10px;
+        background-image: url('../img/contur-left.svg');
+        background-repeat: no-repeat;
         @include flex;
         @include font('Roboto-Bold', normal, 0.8rem,#fff);
 
         &_right {
-            right: 0;
+            right: -15px;
             left: auto;
-            background-image: url('/assets/img/contur-right.webp');
+            background-image: url('../img/contur-right.svg');
         }
     }
 
     &-button {
         width: 150px;
         height: 50px;
-        background-image: url('/assets/img/contur-left.webp');
+        background-color: $color-red;
         @include flex;
         @include font('Roboto-Bold', normal, 0.8rem,#fff);
     }
