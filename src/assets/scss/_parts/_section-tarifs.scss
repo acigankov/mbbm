@@ -85,6 +85,14 @@
         }
     }
 
+    &-button {
+        width: 150px;
+        height: 50px;
+        background-image: url('/assets/img/contur-left.webp');
+        @include flex;
+        @include font('Roboto-Bold', normal, 0.8rem,#fff);
+    }
+
     &-title {
         @include font('Roboto-Bold', normal, 1rem, $color-red);
         text-transform: uppercase;
@@ -111,8 +119,10 @@
     }
 
     &-footer {
+        color: #fff;
         margin-top: auto;
-        text-align: right;
+        width: 100%;
+        @include flex(center, space-between);
 
         &__oldprice {
             display: block;
