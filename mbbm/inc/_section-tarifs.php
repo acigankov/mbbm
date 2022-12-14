@@ -3,7 +3,7 @@
         <div class="section-white">
             <div class="section-padding">
                 <div class="tarifs-header">
-                    <h1 class="tarifs-header__title">Форма заказа</h1>
+                    <h1 class="tarifs-header__title">Старт потока</h1>
                     <div class="tarifs-header__text">
                         <span>Старт ближайшего потока - 12 января 2022 года!</span>
                         <span>Группа по четвергам в 19:00.</span>
