@@ -1,7 +1,7 @@
 <section class="program" id="program">
     <div class="container">
         <div class="section-padding section-white">
-            <h1 class="program-heading">учебная программа</h1>
+            <h1 class="program-heading">Структура курса: </h1>
             <div class="list-item">
                 <div class="list-heading">
                     <span class="list-heading__title">Занятие #1</span>
