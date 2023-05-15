@@ -26,7 +26,7 @@
                     </a>
                 </div><!-- /.intouch-col -->
                 <div class="intouch-col">
-                    <span class="intouch-question">Если у Вас есть вопрос, всегда можете позвонить нам по телефону: <a href="tel:+79037913869">+7-903-791-38-69</a></span>
+                    <span class="intouch-question">Если у Вас есть вопрос, всегда можете позвонить нам по телефону: <a href="tel:+79037913869">+7-903-791-38-69</a> или <a href="tel:+77074374820">+7-707-437-48-20</a></span>
                     <span class="intouch-callback ">Или заказать <span class="callback-action" id="callback-action">обратный звонок!</span>
                         <?= do_shortcode('[contact-form-7 id="22" title="Обратный Звонок" html_id="intouch-form" html_class="intouch-form"]') ?>
                     </span>

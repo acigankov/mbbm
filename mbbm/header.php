@@ -50,6 +50,8 @@
                     </div>
                     <div class="socials-tel">
                         <a href="tel:+79037913869">+7-903-791-38-69</a>
+                        <br/>
+                        <a href="tel:+77074374820">+7-707-437-48-20</a>
                     </div>
                 </div>
                 <nav class="nav mobile">
@@ -73,6 +75,8 @@
                         </div>
                         <div class="socials-tel">
                             <a href="tel:+79037913869">+7-903-791-38-69</a>
+                            <br/>
+                            <a href="tel:+77074374820">+7-707-437-48-20</a>
                         </div>
                     </div>
 

@@ -26,8 +26,8 @@
                         <div class="tarifs-footer">
                             <a href="#callback" class="btn tarifs-button" data-tarif="Пакет «Малая группа»">Выбрать</a>
                             <div class="tarifs-prices">
-                                <span class="tarifs-footer__oldprice">49.000 рублей</span>
-                                <span class="tarifs-footer__price">29.000 рублей</span>
+                                <span class="tarifs-footer__oldprice">49.000 рублей / 299.000 тенге </span>
+                                <span class="tarifs-footer__price">29.000 рублей / 179.000 тенге</span>
                             </div>
                         </div>
                     </div><!-- /.col -->
@@ -46,8 +46,8 @@
                         <div class="tarifs-footer">
                             <a href="#callback" class="btn tarifs-button" data-tarif="Пакет «Индивидуальный»">Выбрать</a>
                             <div class="tarifs-prices">
-                                <span class="tarifs-footer__oldprice">149.000 рублей</span>
-                                <span class="tarifs-footer__price">99.000 рублей</span>
+                                <span class="tarifs-footer__oldprice">149.000 рублей / 899.000 тенге</span>
+                                <span class="tarifs-footer__price">99.000 рублей / 599.000 тенге</span>
                             </div>
                         </div>
                     </div><!-- /.col -->
