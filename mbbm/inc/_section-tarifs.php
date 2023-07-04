@@ -5,7 +5,7 @@
                 <div class="tarifs-header">
                     <h1 class="tarifs-header__title">Старт потока</h1>
                     <div class="tarifs-header__text">
-                        <span>Старт ближайшего потока - 06 июля 2023 года!</span>
+                        <span>Старт ближайшего потока - 13 июля 2023 года!</span>
                         <span>Группа по четвергам в 19:00.</span>
                         <span>Занятия в малой группе 7-10 человек в течение 7 недель.</span>
                     </div>
