@@ -5,8 +5,8 @@
                 <div class="tarifs-header">
                     <h1 class="tarifs-header__title">Старт потока</h1>
                     <div class="tarifs-header__text">
-                        <span>Старт ближайшего потока - 20 июля 2023 года!</span>
-                        <span>Группа по четвергам в 19:00.</span>
+                        <span>Старт второго потока - 9 сентября. !</span>
+                        <span>Группа по воскресеньям в 17:00 Мск / 20:00 Алм.</span>
                         <span>Занятия в малой группе 7-10 человек в течение 7 недель.</span>
                     </div>
                 </div><!-- /.tarifs-header -->
@@ -27,7 +27,7 @@
                             <a href="#callback" class="btn tarifs-button" data-tarif="Пакет «Малая группа»">Выбрать</a>
                             <div class="tarifs-prices">
                                 <span class="tarifs-footer__oldprice">49.000 рублей / 299.000 тенге </span>
-                                <span class="tarifs-footer__price">29.000 рублей / 179.000 тенге</span>
+                                <span class="tarifs-footer__price">20.000 рублей / 99.000 тенге</span>
                             </div>
                         </div>
                     </div><!-- /.col -->
@@ -47,7 +47,7 @@
                             <a href="#callback" class="btn tarifs-button" data-tarif="Пакет «Индивидуальный»">Выбрать</a>
                             <div class="tarifs-prices">
                                 <span class="tarifs-footer__oldprice">149.000 рублей / 899.000 тенге</span>
-                                <span class="tarifs-footer__price">99.000 рублей / 599.000 тенге</span>
+                                <span class="tarifs-footer__price">60.000 рублей / 299.000 тенге</span>
                             </div>
                         </div>
                     </div><!-- /.col -->

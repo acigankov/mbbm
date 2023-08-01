@@ -130,11 +130,13 @@
             display: block;
             @include font('Roboto-Bold', normal, 0.88rem, #fff);
             text-decoration: line-through;
+            padding-left: 15px;
         }
 
         &__price {
             display: block;
             @include font('Roboto-Bold', normal, 1rem, #fff);
+            padding-left: 15px;
         }
     }
 }
