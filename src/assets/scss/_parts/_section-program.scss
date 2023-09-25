@@ -9,8 +9,29 @@
         margin-bottom: 30px;
     }
 
+    &-subheading {
+        @include font('Roboto-black', normal, 22px, #fff);
+        text-transform: uppercase;
+        text-align: left;
+        color: $color-red;
+        margin-bottom: 10px;
+    }
+
+    &-text {
+        @include font('Roboto-regular', normal, 16px, #fff);
+        text-align: left;
+        margin-bottom: 24px;
+        color: $color-dark;
+
+        p {
+            margin-bottom: 6px;
+        }
+    }
+
     .list-item {
-        @include flex(stretch, space-between);
+        display: none;
+
+        //@include flex(stretch, space-between);
         min-height: 170px;
 
         @media (max-width: $md) {
