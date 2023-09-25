@@ -73,7 +73,7 @@
                 </div>
             </div><!-- /.list-item -->
 
-            <img src="/assets/img/mbbmnew.webp" alt="program" class="program-image"><!-- /.program-image -->
+            <img src="<?= get_template_directory_uri() ?>/assets/img/mbbmnew.webp" alt="program" class="program-image"><!-- /.program-image -->
 
         </div><!-- /.section-padding -->
     </div><!-- /.container -->
