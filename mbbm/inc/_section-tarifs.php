@@ -6,13 +6,13 @@
                     <h1 class="tarifs-header__title">Форма заказа</h1>
                     <div class="tarifs-header__text">
                         <span>Старт ближайшего потока - 15 октября 2023 года!</span>
-                        <span>Группа по четвергам в 19:00.</span>
-                        <span>Занятия в малой группе 7-10 человек в течение 7 недель.</span>
+                        <span>Группа по воскресеньям в 20:00 по Алмате / 17:00 по Москве.</span>
+                        <span>Занятия в группе 10-15 человек в течение 4 недель.</span>
                     </div>
                 </div><!-- /.tarifs-header -->
                 <div class="tarifs-row">
                     <div class="tarifs-col">
-                        <div class="tarifs-badge">только 10 мест</div>
+                        <div class="tarifs-badge">только 15 мест</div>
                         <h2 class="tarifs-title">Пакет «Малая группа»:</h2>
                         <ul class="tarifs-list">
                             <li class="tarifs-list__item">Персонально закреплённого Куратора, который будет обеспечивать Вам комфортное
@@ -32,7 +32,7 @@
                         </div>
                     </div><!-- /.col -->
                     <div class="tarifs-col">
-                        <div class="tarifs-badge tarifs-badge_right">только 3 места</div>
+                        <div class="tarifs-badge tarifs-badge_right">только 5 месты</div>
                         <h2 class="tarifs-title">Пакет «Индивидуальный»:</h2>
                         <ul class="tarifs-list">
                             <li class="tarifs-list__item">Индивидуальное сопровождение со стороны Наставников при выполнении домашних заданий;</li>
